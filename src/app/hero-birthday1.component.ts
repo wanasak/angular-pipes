@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'hero-birthday1',
     template: `
-        <p>The hero's birthday is {{ birthday | date:format }}</p>
+        <p>The hero's birthday is {{ birthday | date:format | uppercase }}</p>
         <button (click)="toggleFormat()">Toggle Date Format</button>
     `
 })
