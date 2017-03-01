@@ -9,7 +9,8 @@ import { Component } from '@angular/core';
     <p>{{ myNum | currency }}</p>
     <p>{{ myNum | percent:'3.2-2' }}</p>
     <hero-birthday1></hero-birthday1>
-  `,
+    <power-booster></power-booster>
+  `
 })
 export class AppComponent {
   title = 'Angular Pipe Tutorial';
