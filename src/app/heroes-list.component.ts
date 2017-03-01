@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
     <div *ngFor="let hero of ('heroes.json' | fetch) ">
       {{hero.name}}
     </div>
+    <p>Heroes as json: {{ 'heroes.json' | fetch | json }}</p>
     `
 })
 
