@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
     <power-booster></power-booster>
     <flying-hero></flying-hero>
     <hero-message></hero-message>
+    <hero-list></hero-list>
   `
 })
 export class AppComponent {
