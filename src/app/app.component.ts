@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
     <p>{{ myNum | percent:'3.2-2' }}</p>
     <hero-birthday1></hero-birthday1>
     <power-booster></power-booster>
+    <flying-hero></flying-hero>
   `
 })
 export class AppComponent {
