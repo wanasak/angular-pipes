@@ -16,6 +16,7 @@ export class FlyingHeroComponent {
         let hero = { name, canFly: this.canFly };
         if (this.mutate) {
             // pure pipe won't update display because heroes array reference is unchanged
+            // impure pipe will display
             this.heroes.push(hero);
         } else {
             // pipe updates display because array is a new object

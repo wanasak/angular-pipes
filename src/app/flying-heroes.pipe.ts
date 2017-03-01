@@ -5,7 +5,8 @@ class Flyer {
 }
 
 @Pipe({
-    name: 'flyingHeroes'
+    name: 'flyingHeroes',
+    pure: false     // pipes are pure by default
 })
 export class FlyingHeroesPipe implements PipeTransform {
     transform(allHeroes: Flyer[]) {
