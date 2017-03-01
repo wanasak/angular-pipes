@@ -7,13 +7,20 @@ import { Component } from '@angular/core';
 export class FlyingHeroComponent {
     heroes: any[] = [];
     canFly = true;
+    mutate = true;
     constructor() { this.reset(); }
 
     addHero(name: string) {
         name = name.trim();
         if (!name) { return; }
         let hero = { name, canFly: this.canFly };
-        this.heroes.push(hero);
+        if (this.mutate) {
+            // pure pipe won't update display because heroes array reference is unchanged
+            this.heroes.push(hero);
+        } else {
+            // pipe updates display because array is a new object
+            this.heroes = this.heroes.concat(hero);
+        }
     }
 
     reset() { this.heroes = []; }
