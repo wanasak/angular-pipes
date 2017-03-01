@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
     <hero-birthday1></hero-birthday1>
     <power-booster></power-booster>
     <flying-hero></flying-hero>
+    <hero-message></hero-message>
   `
 })
 export class AppComponent {
